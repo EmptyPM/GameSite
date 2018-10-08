@@ -12,6 +12,90 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
         <link rel="stylesheet" type="text/css" href="landing.css">
         <link rel="stylesheet" type="text/css" href="pageloader.min.css">
+        <style type="text/css">
+            .box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+        </style>
     </head>
     <body>
     <div class="pageloader is-left-to-right is-white is-active" id="loader">
@@ -87,23 +171,62 @@
                             <li class="leaderboard-list has-text-centered">
                                 <span class="title is-3 has-text-white">XVI</span>
                                 <img src="icons/compress/vector 14.png">
-                                <a class="has-text-white">Grand High Exalted Mystic Oracle
-                            </a></li>
+                                <a class="has-text-white" href="#popup1" >Grand High Exalted Mystic Oracle
+                            </a>
+                            <div id="popup1" class="overlay">
+                                <div class="popup">
+                                    <h2>Here NO01</h2>
+                                    <a class="close" href="#">&times;</a>
+                                 <div class="content">
+                                    Thank to pop me out of that button, but now i'm done so you can close this window.
+                                 </div>
+                                </div>
+                             </div>
+                         
+                        </li>
                             <li class="leaderboard-list has-text-centered">
                                 <span class="title is-3 has-text-white">XV</span>
                                 <img src="icons/compress/vector 16.png">
-                                <a class="has-text-white">Senior Oracle
-                                </a></li>
+                                <a class="has-text-white" href="#popup2">Senior Oracle
+                                </a>
+                                <div id="popup2" class="overlay">
+                                <div class="popup">
+                                    <h2>Here </h2>
+                                    <a class="close" href="#">&times;</a>
+                                 <div class="content">
+                                   002
+                                 </div>
+                                </div>
+                             </div>
+                            </li>
                             <li class="leaderboard-list has-text-centered">
                                 <span class="title is-3 has-text-white">XIV</span>
                                 <img src="icons/compress/vector 13.png">
-                                <a class="has-text-white">The Oracle
-                                </a></li>
+                                <a class="has-text-white" href="#popup3">The Oracle
+                                </a>
+                                <div id="popup3" class="overlay">
+                                <div class="popup">
+                                    <h2>Here </h2>
+                                    <a class="close" href="#">&times;</a>
+                                 <div class="content">
+                                    003
+                                 </div>
+                                </div>
+                             </div></li>
                             <li class="leaderboard-list has-text-centered">
                                 <span class="title is-3 has-text-white">XIII</span>
                                 <img src="icons/compress/vector 12.png">
-                                <a class="has-text-white">Supreme Master Noble Guardian
-                                </a></li>
+                                <a class="has-text-white" href="#popup4">Supreme Master Noble Guardian
+                                </a>
+                                <div id="popup4" class="overlay">
+                                <div class="popup">
+                                    <h2>Here </h2>
+                                    <a class="close" href="#">&times;</a>
+                                 <div class="content">
+                                    004
+                                 </div>
+                                </div>
+                             </div></li>
                         </ul>
                     </div>
                     <div class="column">
@@ -111,23 +234,62 @@
                             <li class="leaderboard-list has-text-centered">
                                 <span class="title is-3 has-text-white">XII</span>
                                 <img src="icons/compress/vector 17.png">
-                                <a class="has-text-white">Senior Master Guardian
-                                </a></li>
+                                <a class="has-text-white" href="#popup5">Senior Master Guardian
+                                </a>
+                                <div id="popup5" class="overlay">
+                                <div class="popup">
+                                    <h2>Here </h2>
+                                    <a class="close" href="#">&times;</a>
+                                 <div class="content">
+                                    005
+                                 </div>
+                                </div>
+                             </div></li>
                             <li class="leaderboard-list has-text-centered">
                                 <span class="title is-3 has-text-white">XI</span>
                                 <img src="icons/compress/vector 11.png">
-                                <a class="has-text-white">Master Guardian
-                                </a></li>
+                                <a class="has-text-white" href="#popup6">Master Guardian
+                                </a>
+                            <div id="popup6" class="overlay">
+                                <div class="popup">
+                                    <h2>Here</h2>
+                                    <a class="close" href="#">&times;</a>
+                                 <div class="content">
+                                    006
+                                 </div>
+                                </div>
+                             </div>
+                         </li>
                             <li class="leaderboard-list has-text-centered">
                                 <span class="title is-3 has-text-white">X</span>
                                 <img src="icons/compress/vector 10.png">
-                                <a class="has-text-white">Senior Elders
-                                </a></li>
+                                <a class="has-text-white" href="#popup7">Senior Elders
+                                </a>
+                                <div id="popup7" class="overlay">
+                                <div class="popup">
+                                    <h2>Here</h2>
+                                    <a class="close" href="#">&times;</a>
+                                 <div class="content">
+                                    007
+                                 </div>
+                                </div>
+                             </div>
+                            </li>
                             <li class="leaderboard-list has-text-centered">
                                 <span class="title is-3 has-text-white">IX</span>
                                 <img src="icons/compress/vector 9.png">
-                                <a class="has-text-white">The Elders
-                                </a></li>
+                                <a class="has-text-white" href="#popup8">The Elders
+                                </a>
+                            <div id="popup8" class="overlay">
+                                <div class="popup">
+                                    <h2>Here </h2>
+                                    <a class="close" href="#">&times;</a>
+                                 <div class="content">
+                                    008
+                                 </div>
+                                </div>
+                             </div>
+                         </li>
                         </ul>
                     </div>
                     <div class="column">
@@ -135,23 +297,62 @@
                             <li class="leaderboard-list has-text-centered">
                                 <span class="title is-3 has-text-white">VIII</span>
                                 <img src="icons/compress/vector 8.png">
-                                <a class="has-text-white">Free World Leader
-                                </a></li>
+                                <a class="has-text-white" href="#popup9">Free World Leader
+                                </a>
+                            <div id="popup9" class="overlay">
+                                <div class="popup">
+                                    <h2>Here </h2>
+                                    <a class="close" href="#">&times;</a>
+                                 <div class="content">
+                                    009
+                                 </div>
+                                </div>
+                             </div>
+                         </li>
                             <li class="leaderboard-list has-text-centered">
                                 <span class="title is-3 has-text-white">VII</span>
                                 <img src="icons/compress/vector 7.png">
-                                <a class="has-text-white">Senior Regional Member
-                                </a></li>
+                                <a class="has-text-white" href="#popup10">Senior Regional Member
+                                </a>
+                            <div id="popup10" class="overlay">
+                                <div class="popup">
+                                    <h2>Here </h2>
+                                    <a class="close" href="#">&times;</a>
+                                 <div class="content">
+                                    010
+                                 </div>
+                                </div>
+                             </div>
+                         </li>
                             <li class="leaderboard-list has-text-centered">
                                 <span class="title is-3 has-text-white">VI</span>
                                 <img src="icons/compress/vector 6.png">
-                                <a class="has-text-white">Regional Member
-                                </a></li>
+                                <a class="has-text-white" href="#popup11">Regional Member
+                                </a>
+                                <div id="popup11" class="overlay">
+                                <div class="popup">
+                                    <h2>Here</h2>
+                                    <a class="close" href="#">&times;</a>
+                                 <div class="content">
+                                    011
+                                 </div>
+                                </div>
+                             </div>
+                            </li>
                             <li class="leaderboard-list has-text-centered">
                                 <span class="title is-3 has-text-white">V</span>
                                 <img src="icons/compress/vector 5.png">
-                                <a class="has-text-white">Senior State Member
-                                </a></li>
+                                <a class="has-text-white" href="#popup12">Senior State Member
+                                </a>
+                                <div id="popup12" class="overlay">
+                                <div class="popup">
+                                    <h2>Here </h2>
+                                    <a class="close" href="#">&times;</a>
+                                 <div class="content">
+                                    012
+                                 </div>
+                                </div>
+                             </div></li>
                         </ul>
                     </div>
                     <div class="column">
@@ -159,23 +360,60 @@
                             <li class="leaderboard-list has-text-centered">
                                 <span class="title is-3 has-text-white">IV</span>
                                 <img src="icons/compress/vector 4.png">
-                                <a class="has-text-white">State Member
-                                </a></li>
+                                <a class="has-text-white" href="#popup13">State Member
+                                </a>
+                            <div id="popup13" class="overlay">
+                                <div class="popup">
+                                    <h2>Here</h2>
+                                    <a class="close" href="#">&times;</a>
+                                 <div class="content">
+                                    013
+                                 </div>
+                                </div>
+                             </div>
+                         </li>
                             <li class="leaderboard-list has-text-centered">
                                 <span class="title is-3 has-text-white">III</span>
                                 <img src="icons/compress/vector 3.png">
-                                <a class="has-text-white">Senior County Member
+                                <a class="has-text-white" href="#popup14">Senior County Member
                                 </a>
+                                <div id="popup14" class="overlay">
+                                <div class="popup">
+                                    <h2>Here</h2>
+                                    <a class="close" href="#">&times;</a>
+                                 <div class="content">
+                                    014
+                                 </div>
+                                </div>
+                             </div>
                             </li>
                             <li class="leaderboard-list has-text-centered">
                                 <span class="title is-3 has-text-white">II</span>
                                 <img src="icons/compress/vector 2.png">
-                                <a class="has-text-white">County Member</a>
+                                <a class="has-text-white" href="#popup15">County Member</a>
+                                <div id="popup15" class="overlay">
+                                <div class="popup">
+                                    <h2>Here</h2>
+                                    <a class="close" href="#">&times;</a>
+                                 <div class="content">
+                                    015
+                                 </div>
+                                </div>
+                             </div>
                             </li>
                             <li class="leaderboard-list has-text-centered">
                                 <span class="title is-3 has-text-white">I</span>
                                 <img src="icons/compress/vector 1.png">
-                                <a class="has-text-white">Zip Code Member</a>
+                                <a class="has-text-white" href="#popup16">Zip Code Member</a>
+                                <div id="popup16" class="overlay">
+                                <div class="popup">
+                                    <h2>Here</h2>
+                                    <a class="close" href="#">&times;</a>
+                                 <div class="content">
+                                    016
+                                 </div>
+                                </div>
+                             </div>
                             </li>
                         </ul>
                     </div>
