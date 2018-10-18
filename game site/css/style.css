@@ -889,6 +889,7 @@ body {
   margin-top: -10px;
   left: 15px;
   font-size: 20px;
+  height: 100px
 }
 @media screen and (max-width: 480px) {
   #fh5co-subscribe form .fh5co-icon {
